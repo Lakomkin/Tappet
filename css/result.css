@@ -1,0 +1,61 @@
+
+@font-face{
+  font-family: "bold";
+  src: url(/fonts/bold.ttf);
+}
+
+@font-face{
+  font-family: "regular";
+  src: url(/fonts/regular.ttf);
+}
+
+body{
+	background: url(/img/result_bg.jpg)no-repeat center center;
+	background-size: 100%;
+}
+
+#title {
+	padding-bottom: 125px;
+	padding-left: 110px;
+	text-transform: uppercase;
+	font-family: "bold";
+	color: #fff;
+}
+
+img{
+	padding-top: 90px;
+	padding-bottom: 30px;
+}
+
+a.btn{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	background-color: #ea6422;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #ea6422;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: "bold";
+	margin-bottom: 20px;
+	transition: 0.15s;
+}
+
+a:hover {
+	color: #fff;
+	opacity: 0.95; 
+	transition: 0.25s;
+}
+
+a[href="/"]{
+	margin-left: 10px;
+	padding-left: 45px;
+	padding-right: 45px;
+
+}
+
+a[href="/profile"]{
+	margin-left: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}

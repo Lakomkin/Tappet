@@ -1,0 +1,81 @@
+@font-face{
+	font-family: "bold";
+	src: url(../fonts/bold.ttf);
+}
+
+@font-face{
+	font-family: "regular";
+	src: url(../fonts/regular.ttf);
+}
+
+
+
+a.logo{
+	padding-left: 55px;
+	padding-top: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-family: "bold";
+	font-size: 16pt;
+	text-decoration: none;
+	color: #000;
+}
+
+#orge{
+	color: #ff6414;
+}
+
+img[src="img/logo2.png"]{
+	padding-left: 50px;
+	padding-bottom: 7px;
+	padding-top: 25px;
+}
+
+img[src="img/bell.png"]{
+	float: right;
+	margin-top: -25px;
+	padding-right: 40px;
+}
+
+img[src="img/message.png"]{
+	float: right;
+	margin-top: -25px;
+	padding-right: 90px;
+}
+
+img[src="img/bigstick.png"]{
+	padding-top: 5px;
+	width: 100%;	
+}
+
+#nav {
+	float: right;
+	padding-right: 150px;
+	margin-top: -30px;
+}
+
+#nav a {
+	font-family: "bold";
+	padding-left: 60px;
+	font-size:16pt ;
+	padding-top: 0px;
+	text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+	display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+	line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+	color:#000;/*Задаём цвет ссылки*/
+}
+
+#nav a:after {
+	
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 4px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #ea6422; /*цвет фона элемента*/
+    transition: width 0.1s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+
+#nav a:hover:after,
+#nav a:focus:after {
+    width: 100%;
+}

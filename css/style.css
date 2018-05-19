@@ -1,0 +1,150 @@
+
+section#img{
+	background: url(../img/bg.jpg)no-repeat center center;
+}
+header img {
+	padding-top: 30px;
+}
+#nav {
+	padding-left: 72px;
+}
+
+#nav a {
+padding-top: 20px;
+padding-right: 50px;
+text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:#fff;/*Задаём цвет ссылки*/
+}
+
+#nav a:after {
+	
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 4px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #ea6422; /*цвет фона элемента*/
+    transition: width 0.2s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+
+#nav a:hover:after,
+#nav a:focus:after {
+    width: 100%;
+}
+
+#nav a:hover{
+  color:#fff;
+} 
+
+.fb {
+	padding-left: 80px;
+	padding-top: 20px;
+	
+}
+
+.vk {
+	padding-left: 80px;
+	padding-top: 150px;
+
+}
+
+h2.upper{
+	padding-top: 100px;
+	color:#fffce0;
+	text-transform: uppercase;
+}
+
+form#login{
+	padding-left: 80px;
+}
+
+.line{ 
+
+	margin-top: -20px;
+	margin-left: -10px;
+}
+#one {
+	text-overflow: none ;
+	border: none;
+	margin-top: 90px;
+	width: 240px;
+
+}
+#two {
+	border: none;
+	margin-top: 15px;
+	width: 240px;
+}
+#three {
+	margin-top: 10px;
+
+}
+#four {
+	margin-top: 5px;
+	margin-bottom: 60px;
+}
+
+
+
+input[type="checkbox"] {
+
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/false.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../img/true.png) left top no-repeat;
+}
+
+img.arrow{
+	padding-left: 40px;
+}
+img.arrow :hover{
+	padding-left: 50px;
+}
+
+input[type="submit"]{
+
+	border: none;
+	padding-top: 16px;
+	padding-left: 230px;
+	background: url(../img/enter.jpg)no-repeat center center;
+}
+
+.zeroone{
+	padding-left: 60px;
+	padding-top: 80px;
+}
+
+h3.zag{
+	padding-top: 15px;
+	color: #000;
+	font-style: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+.stick{
+	padding-left: 127px;
+
+}
+
+
+
+
+
+
+
+
+
